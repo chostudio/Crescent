@@ -2,6 +2,21 @@
 
 /* The astrisk selects all CSS elements */
 
+#CrescentTitle {
+color: white;
+}
+
+header {
+    font-size: 40px;
+}
+h1 {
+font-size: 40px;
+}
+
 p {
 font-size: 20px;
+}
+
+footer {
+    font-size: 20px;
 }
