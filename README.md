@@ -1,3 +1,3 @@
 # Crescent
 
-This is how the website of a moon hotel would look like.
+Mock-up of how a futuristic moon hotel's website would look like.
