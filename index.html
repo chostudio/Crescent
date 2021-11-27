@@ -6,40 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crescent - Home</title>
-
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
 
-        <nav>
+    <ul>
+        <li><a href="index.html">Crescent</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book-now.html">Book now</a></li>
 
+    </ul>
 
-        </nav>
-    </header>
-    <h1>Crescent</h1>
-    <p></p>
+    <script>document.write(new Date().getFullYear() + 20);</script>
+    <div id="digital-clock"> </div>
+    <script src="script.js"> </script>
+    <p>Current Temperature:-</p>
+    <p id="demo"></p>
+    <p>°F</p>
+    <script>
+        let x = Math.floor((Math.random() * 200) + 1);
+        document.getElementById("demo").innerHTML = x;
+    </script>
 
+    <h1><a href="activities.html">Activities</a></h1>
+    <p>See all the fun offered.</p>
     <h1><a href="dining.html">Dining</a></h1>
-    <h1>Activities</h1>
+    <p>In the mood for some food? Check out our selection of various restaurants.</p>
+    <h1><a href="about.html">About</a></h1>
+    <p>Learn more about Crescent.</p>
 
-    <button onclick="window.location.href='dining.html'">Dining</button>
-    <p>Hello
-    <p>
-        <a href="dining.html">Dining</a>
-    </p>
-    </p>
-
-    <h1>About</h1>
-    <p></p>
-
-    <h1>Contact</h1>
-    <p></p>
-
-
-    <h1>Book Now</h1>
-    <p></p>
 
 </body>
 
