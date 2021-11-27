@@ -21,14 +21,18 @@
 
     </ul>
 
-    <script>document.write(new Date().getFullYear() + 20);</script>
+    <p id="year"></p>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear() + 20;
+    </script>
     <div id="digital-clock"> </div>
     <script src="script.js"> </script>
-    <p>Current Temperature:-</p>
+
+    <p class="inline">Current Temperature:-</p>
     <p id="demo"></p>
-    <p>°F</p>
+    <p class="inline">°F</p>
     <script>
-        let x = Math.floor((Math.random() * 200) + 1);
+        let x = Math.floor((Math.random() * 200) + 100);
         document.getElementById("demo").innerHTML = x;
     </script>
 
