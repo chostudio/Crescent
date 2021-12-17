@@ -14,7 +14,10 @@ p {
 font-size: 20px;
 font-family: 'Roboto';
 white-space: nowrap;
-padding-left: 100px;
+padding-left: 50px;
+padding-right: 50px;
+word-break: break-all;
+text-align: center;
 }
 
 span {
@@ -96,6 +99,10 @@ a:active {
     display: inline;
 }
 
+#beforetext{
+padding-left: 30px;
+}
+
 #top{
   padding-top: 200px;
 }
@@ -103,4 +110,5 @@ a:active {
 html,body {
     margin:0;
     padding:0;
+    overflow-x: hidden;
 }
