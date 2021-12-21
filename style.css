@@ -60,16 +60,9 @@ li a {
 }
 
 #digital-clock {
-  background-color: #000000;
-  width: 40%;
-  margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
   font-family: 'Orbitron', sans-serif;
-  font-size: 64px;
-  color: white;
-  text-align: center;
-
+  display: inline;
+  font-size: 20px;
 }
 
 a {
