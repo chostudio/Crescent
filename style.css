@@ -42,12 +42,9 @@ font-weight:normal;
   width: 100%;
 }
 
-li {
-  float: right;
-  
-}
 
 li a {
+  float: right;
   display: block;
   color: white;
   text-align: center;
@@ -92,7 +89,6 @@ padding-left: 30px;
 }
 
 #top{
-  padding-top: 200px;
 }
 
 html,body {
