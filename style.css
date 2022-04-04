@@ -3,32 +3,32 @@
 /* The astrisk selects all CSS elements */
 
 #CrescentTitle {
-color: white;
+  color: white;
 }
 
 
 p {
-font-size: 30px;
-font-family: 'Roboto';
-margin-left: 50px;
-margin-right: 50px;
-text-align: center;
-color: white;
+  font-size: 30px;
+  font-family: 'Roboto';
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  color: black;
 }
 
 span {
-white-space: nowrap;
-font-size: 20px;
-font-family: 'Orbitron', sans-serif;
-color: white;
+  white-space: nowrap;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
 }
 
 h1 {
-font-size: 50px;
-font-family: 'Bebas Neue';
-font-weight:normal;
-text-align: center;
-color: white;
+  font-size: 50px;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  text-align: center;
+  color: black;
 }
 
 ul {
@@ -36,8 +36,8 @@ ul {
   margin: 0;
   padding: 0;
   font-size: 50px;
-font-family: 'Bebas Neue';
-font-weight:normal;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
   overflow: hidden;
   background-color: #333;
   position: fixed;
@@ -52,62 +52,57 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 20px;
   text-decoration: none;
 }
 
 #digital-clock {
   font-family: 'Orbitron', sans-serif;
   display: inline;
-  font-size:20px;
-  color: white;
+  font-size: 20px;
+  color: black;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover { 
-  text-decoration: none; 
-  color:yellow; 
-  text-decoration: underline;
-}
-a:focus { 
   text-decoration: none;
-  color:orange;
-  text-decoration: underline; 
+  color: white;
 }
-a:active { 
-  text-decoration: none; 
-  color:teal; 
+
+a:hover {
+  text-decoration: none;
   text-decoration: underline;
 }
-  
 
-.inline{
-    display: inline;
+a:active {
+  text-decoration: none;
+  color: teal;
+  text-decoration: underline;
 }
 
-#beforetext{
-padding-left: 30px;
+
+.inline {
+  display: inline;
 }
 
-html,body {
-    margin:0;
-    padding:0;
-    overflow-x: hidden;
-    background-image: linear-gradient(#2e3ae5,#100d1a);
+#beforetext {
+  padding-left: 30px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 footer {
-    font-size: 40px;
-      list-style-type: none;
+  font-size: 40px;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   font-size: 50px;
-font-family: 'Bebas Neue';
-font-weight:normal;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
   overflow: hidden;
   background-color: #333;
   top: 0;
