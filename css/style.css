@@ -31,30 +31,6 @@ h1 {
   color: black;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-size: 50px;
-  font-family: 'Bebas Neue';
-  font-weight: normal;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-
-
-li a {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
 
 #digital-clock {
   font-family: 'Orbitron', sans-serif;
@@ -96,15 +72,25 @@ body {
 }
 
 footer {
+  float: left;
   font-size: 40px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 50px;
   font-family: 'Bebas Neue';
   font-weight: normal;
   overflow: hidden;
   background-color: #333;
   top: 0;
   width: 100%;
+}
+
+
+li a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
