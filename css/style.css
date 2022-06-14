@@ -1,0 +1,96 @@
+/* CSS */
+
+/* The astrisk selects all CSS elements */
+
+#CrescentTitle {
+  color: white;
+}
+
+
+p {
+  font-size: 30px;
+  font-family: 'Roboto';
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  color: black;
+}
+
+span {
+  white-space: nowrap;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  text-align: center;
+  color: black;
+}
+
+
+#digital-clock {
+  font-family: 'Orbitron', sans-serif;
+  display: inline;
+  font-size: 20px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+  color: teal;
+  text-decoration: underline;
+}
+
+
+.inline {
+  display: inline;
+}
+
+#beforetext {
+  padding-left: 30px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+footer {
+  float: left;
+  font-size: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100%;
+}
+
+
+li a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
