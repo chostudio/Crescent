@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crescent - Home</title>
+
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Crescent</a>
+        <a href="book-now.html">Book now</a>
+        <a href="about.html">About</a>
+        <a href="dining.html">Dining</a>
+        <a href="activities.html">Activities</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script src="navbar.js"> </script>
+
+    <h1 id="top">welcome to the moon</h1>
+    <span id="beforeyear" style="padding-left: 50px;">Current year:</span>
+    <span id="year"></span>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear() + 20;
+    </script>
+    <br>
+    <br>
+    <span id="top" style="padding-left: 50px;">Current Time:</span>
+    <div id="digital-clock"> </div>
+    <script src="script.js"> </script>
+    <br>
+    <br>
+    <span class="inline" style="padding-left: 50px;">Current Temperature:-</span>
+    <span id="demo"></span>
+    <span class="inline">°F</span>
+    <script>
+        let x = Math.floor((Math.random() * 200) + 100);
+        document.getElementById("demo").innerHTML = x;
+    </script>
+
+    <h1><a href="activities.html">Activities</a></h1>
+    <p>See all the entertainment and attractions offered on the moon!</p>
+    <h1><a href="dining.html">Dining</a></h1>
+    <p>In the mood for some food? Check out our selection of various restaurants.</p>
+    <h1><a href="about.html">About</a></h1>
+    <p>Learn more about Crescent.</p>
+
+    <p style=>Copyleft All wrongs reserved Crescent Hotel</p>
+
+
+    <footer style="font-family: 'Roboto'; font-size: 20px;">
+        <li><a href="book-now.html">Book now</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="index.html">Crescent</a></li>
+
+    </footer>
+
+
+    <noscript>To use this site, please enable JavaScript.</noscript>
+
+</body>
+
+</html>
