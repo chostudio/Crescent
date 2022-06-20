@@ -13,7 +13,6 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 50px;
-    opacity: 0.5;
 }
 
 /* Change the color of links on hover */
@@ -21,21 +20,23 @@
     color: aqua;
     outline-style: solid;
     outline-color: aqua;
-    animation: opacity 1s infinite;
+    animation: toBlue 1s;
 }
 
-@keyframes opacity {
+@keyframes toBlue {
     0% {
-        opacity: 0.5;
+        color: white;
     }
 
     100% {
-        opacity: 1;
+        color: aqua;
     }
 }
 
 /* Add an active class to highlight the current page */
-.topnav a.active {}
+.topnav a.active {
+    color: aqua;
+}
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
