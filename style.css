@@ -11,14 +11,14 @@ p {
   margin-left: 50px;
   margin-right: 50px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 span {
   white-space: nowrap;
   font-size: 20px;
   font-family: 'Orbitron', sans-serif;
-  color: black;
+  color: white;
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
   font-family: 'Bebas Neue';
   font-weight: normal;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 
@@ -34,7 +34,7 @@ h1 {
   font-family: 'Orbitron', sans-serif;
   display: inline;
   font-size: 20px;
-  color: black;
+  color: white;
 }
 
 a {
@@ -67,6 +67,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: black;
 }
 
 footer {
