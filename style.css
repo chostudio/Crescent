@@ -45,12 +45,15 @@ a {
 a:hover {
   text-decoration: none;
   text-decoration: underline;
+  cursor: url("/regular.png"), auto;
+
 }
 
 a:active {
   text-decoration: none;
   color: teal;
   text-decoration: underline;
+  cursor: url("/hover.png"), auto;
 }
 
 
@@ -62,7 +65,10 @@ a:active {
   padding-left: 30px;
 }
 
-html,
+html {
+  cursor: url("/regular.png"), auto;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -84,6 +90,9 @@ footer {
   width: 100%;
 }
 
+::selection {
+  background: aqua;
+}
 
 li a {
   float: right;
