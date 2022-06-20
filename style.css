@@ -45,7 +45,7 @@ a {
 a:hover {
   text-decoration: none;
   text-decoration: underline;
-  cursor: url("/regular.png"), auto;
+  cursor: url("hover.png"), auto;
 
 }
 
@@ -53,7 +53,7 @@ a:active {
   text-decoration: none;
   color: teal;
   text-decoration: underline;
-  cursor: url("/hover.png"), auto;
+  cursor: url("hover.png"), auto;
 }
 
 
@@ -66,7 +66,7 @@ a:active {
 }
 
 html {
-  cursor: url("/regular.png"), auto;
+  cursor: url("regular.png"), auto;
 }
 
 body {
