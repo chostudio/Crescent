@@ -2,9 +2,6 @@
 
 /* The astrisk selects all CSS elements */
 
-
-
-
 p {
   font-size: 30px;
   font-family: 'Roboto';
@@ -29,7 +26,6 @@ h1 {
   color: white;
 }
 
-
 #digital-clock {
   font-family: 'Orbitron', sans-serif;
   display: inline;
@@ -45,7 +41,7 @@ a {
 a:hover {
   text-decoration: none;
   text-decoration: underline;
-  cursor: url("hover.png"), auto;
+  cursor: url("regular.png"), auto;
 
 }
 
@@ -53,7 +49,7 @@ a:active {
   text-decoration: none;
   color: teal;
   text-decoration: underline;
-  cursor: url("hover.png"), auto;
+  cursor: url("regular.png"), auto;
 }
 
 
