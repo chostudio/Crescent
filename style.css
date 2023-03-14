@@ -107,12 +107,6 @@ li a {
   clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -120,10 +114,11 @@ li a {
 
 
 .infoColumn {
-  display: block;
   float: left;
   width: 33.33%;
   padding: 10px;
+  text-align: center;
+
 }
 
 /* Clear floats after the columns */
@@ -131,4 +126,31 @@ li a {
   content: "";
   display: table;
   clear: both;
+}
+
+.space {
+  height: 150px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1400px) {
+  .space {
+    height: 100px;
+
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .column {
+    width: 100%;
+  }
+
+  .infoColumn {
+    width: 100%;
+  }
+
+  .space {
+    height: 50px;
+
+  }
 }
