@@ -117,3 +117,18 @@ li a {
 * {
   box-sizing: border-box;
 }
+
+
+.infoColumn {
+  display: block;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.infoRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
