@@ -10,7 +10,7 @@ github.com/chostudio
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crescent - Home</title>
+    <title>Crescent</title>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -32,43 +32,64 @@ github.com/chostudio
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
     <div class="topnav" id="myTopnav">
-        <a href="index.html"><img src="crescentLogo.png" style="width: 150px;background-color: transparent;" /></a>
-        <a href="book-now.html" style="float: right; background-color: #f2f2f2; color:black;" id="book-now">Book now</a>
+        <a href="index.html">Crescent</a>
+        <a href="book-now.html" style="float: right;">Book now</a>
         <a href="dining.html" style="float: right;">Dining</a>
         <a href="activities.html" style="float: right;">Activities</a>
-
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
     <script src="navbar.js"> </script>
 
-    <h1 id="top">An experience out of this world.</h1>
-    <span id="beforeyear" style="padding-left: 50px;">Current year:</span>
-    <span id="year"></span>
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear() + 20;
-    </script>
-    <br>
-    <br>
-    <span id="top" style="padding-left: 50px;">Current Time:</span>
-    <div id="digital-clock"> </div>
-    <script src="script.js"> </script>
-    <br>
-    <br>
-    <span class="inline" style="padding-left: 50px;">Current Temperature:-</span>
-    <span id="demo"></span>
-    <span class="inline">°C</span>
-    <script>
-        let x = Math.floor((Math.random() * 100) + 100);
-        document.getElementById("demo").innerHTML = x;
-    </script>
-    </div>
+    <!-- hero landing page-->
+    <section>
+        <div class="row" style="display: flex;">
+            <div class="column">
+                <br>
+                <br>
+                <br>
+                <br>
 
+                <h1 id="top" style="text-align: center;">An experience out of this world.</h1>
+                <p style="border-radius: 5px; border-color: aliceblue; border: 5px;">Plan Your Stay →</p>
+
+
+                <br><br><br><br><br><br><br>
+                <span id=" beforeyear" style="padding-left: 50px;">Year:</span>
+                <span id="year"></span>
+                <script>
+                    document.getElementById("year").innerHTML = new Date().getFullYear() + 20;
+                </script>
+
+                <span id="top" style="padding-left: 50px;">Time:</span>
+                <div id="digital-clock"> </div>
+                <script src="script.js"> </script>
+
+
+                <span class="inline" style="padding-left: 50px;"> Temp:-</span>
+                <span id="demo"></span>
+                <span class="inline">°C</span>
+                <script>
+                    let x = Math.floor((Math.random() * 100) + 100);
+                    document.getElementById("demo").innerHTML = x;
+                </script>
+
+            </div>
+
+            <div class="column">
+                <img src="images/mainHotel.png" alt="Hotel Image" style="width: 100%;">
+            </div>
+        </div>
+
+
+    </section>
 
     <h1><a href="activities.html">Activities</a></h1>
     <p>See all the entertainment and attractions offered on the moon!</p>
@@ -87,10 +108,7 @@ github.com/chostudio
         <li><a href="index.html">Crescent</a></li>
 
     </footer>
-
-
     <noscript>To use this site, please enable JavaScript.</noscript>
-
 </body>
 
 </html>
