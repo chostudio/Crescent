@@ -8,14 +8,14 @@ p {
   margin-left: 50px;
   margin-right: 50px;
   text-align: center;
-  color: white;
+  color: #f2f2f2;
 }
 
 span {
   white-space: nowrap;
   font-size: 20px;
   font-family: 'Orbitron', sans-serif;
-  color: white;
+  color: #f2f2f2;
 }
 
 h1 {
@@ -23,19 +23,19 @@ h1 {
   font-family: 'Bebas Neue';
   font-weight: normal;
   text-align: center;
-  color: white;
+  color: #f2f2f2;
 }
 
 #digital-clock {
   font-family: 'Orbitron', sans-serif;
   display: inline;
   font-size: 20px;
-  color: white;
+  color: #f2f2f2;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #f2f2f2;
 }
 
 a:hover {
@@ -87,7 +87,7 @@ footer {
 li a {
   float: right;
   display: block;
-  color: white;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px;
   text-decoration: none;
