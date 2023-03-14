@@ -1,10 +1,9 @@
+<!DOCTYPE html>
 <!-- 
 Created by Chris Ho: 
 chrisho.dev
 github.com/chostudio
 -->
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -33,23 +32,22 @@ github.com/chostudio
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 </head>
 
 <body>
     <div class="topnav" id="myTopnav">
-        <a href="index.html">Crescent</a>
-        <a href="activities.html" style="float: right;">Activities</a>
+        <a href="index.html"><img src="crescentLogo.png" style="width: 150px;background-color: transparent;" /></a>
+        <a href="book-now.html" style="float: right; background-color: #f2f2f2; color:black;" id="book-now">Book now</a>
         <a href="dining.html" style="float: right;">Dining</a>
-        <a href="book-now.html" style="float: right;">Book now</a>
+        <a href="activities.html" style="float: right;">Activities</a>
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
     <script src="navbar.js"> </script>
 
-    <h1 id="top">welcome to the moon</h1>
+    <h1 id="top">An experience out of this world.</h1>
     <span id="beforeyear" style="padding-left: 50px;">Current year:</span>
     <span id="year"></span>
     <script>
@@ -64,9 +62,9 @@ github.com/chostudio
     <br>
     <span class="inline" style="padding-left: 50px;">Current Temperature:-</span>
     <span id="demo"></span>
-    <span class="inline">°F</span>
+    <span class="inline">°C</span>
     <script>
-        let x = Math.floor((Math.random() * 200) + 100);
+        let x = Math.floor((Math.random() * 100) + 100);
         document.getElementById("demo").innerHTML = x;
     </script>
     </div>

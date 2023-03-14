@@ -1,6 +1,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
+    transition-duration: 0.4s;
 }
 
 
@@ -16,28 +17,19 @@
     font-size: 50px;
 }
 
+#book-now :hover {
+    background-color: aqua;
+}
+
 /* Change the color of links on hover */
 .topnav a:hover {
-    color: aqua;
-    outline-style: solid;
-    outline-color: aqua;
-    animation: toBlue 0.5s;
+    background-color: aqua;
 }
 
-@keyframes toBlue {
-    0% {
-        color: white;
-    }
-
-    100% {
-        color: aqua;
-    }
-}
-
-/* Add an active class to highlight the current page */
+/* Add an active class to highlight the current page
 .topnav a.active {
     color: aqua;
-}
+} */
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
