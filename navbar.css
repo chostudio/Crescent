@@ -3,6 +3,7 @@
     overflow: hidden;
 }
 
+
 /* Style the links inside the navigation bar */
 .topnav a {
     font-family: 'Bebas Neue';
@@ -20,7 +21,7 @@
     color: aqua;
     outline-style: solid;
     outline-color: aqua;
-    animation: toBlue 1s;
+    animation: toBlue 0.5s;
 }
 
 @keyframes toBlue {
