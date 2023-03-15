@@ -140,7 +140,7 @@ li a {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .column {
     width: 100%;
   }
@@ -151,6 +151,13 @@ li a {
 
   .space {
     height: 40px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #top {
+    font-size: 40px;
 
   }
 }
