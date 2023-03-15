@@ -33,6 +33,10 @@ h1 {
   color: #f2f2f2;
 }
 
+h2 {
+  font-family: 'Bebas Neue';
+}
+
 a {
   text-decoration: none;
   color: #f2f2f2;
@@ -166,8 +170,7 @@ li a {
 .secondcolumn {
   float: left;
   padding: 10px;
-  height: 300px;
-  /* Should be removed. Only for demonstration */
+  position: relative;
 }
 
 .left {
@@ -192,6 +195,15 @@ li a {
   .right {
     width: 100%;
   }
+}
 
+.image {
+  z-index: -1;
+}
 
+.newsText {
+  position: absolute;
+  bottom: 40px;
+  left: -16px;
+  color: #f2f2f2;
 }
