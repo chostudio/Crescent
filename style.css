@@ -161,3 +161,37 @@ li a {
 
   }
 }
+
+/* Create two unequal columns that floats next to each other */
+.secondcolumn {
+  float: left;
+  padding: 10px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+.secondrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 1150px) {
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+
+}
