@@ -13,8 +13,15 @@ p {
 
 span {
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Orbitron', sans-serif;
+  color: #f2f2f2;
+}
+
+#digital-clock {
+  font-family: 'Orbitron', sans-serif;
+  display: inline;
+  font-size: 25px;
   color: #f2f2f2;
 }
 
@@ -23,13 +30,6 @@ h1 {
   font-family: 'Bebas Neue';
   font-weight: normal;
   text-align: center;
-  color: #f2f2f2;
-}
-
-#digital-clock {
-  font-family: 'Orbitron', sans-serif;
-  display: inline;
-  font-size: 20px;
   color: #f2f2f2;
 }
 
@@ -63,7 +63,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 footer {
@@ -135,12 +135,12 @@ li a {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1400px) {
   .space {
-    height: 100px;
+    height: 75px;
 
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
   .column {
     width: 100%;
   }
@@ -150,7 +150,7 @@ li a {
   }
 
   .space {
-    height: 50px;
+    height: 40px;
 
   }
 }

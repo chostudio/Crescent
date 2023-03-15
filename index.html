@@ -55,29 +55,28 @@ github.com/chostudio
                 <section class="space"></section>
 
                 <h1 id="top" style="text-align: center;">An experience out of this world.</h1>
-                <div style="border-width:2px; border-style:solid; border-color:white;">
-                    <a href="/book-now.html">
-                        <p>Plan Your Stay →</p>
-                    </a>
-                </div>
+                <a style="box-sizing: border-box; display: block; border-width:2px; border-style:solid; border-color:white; width: 300px;margin:auto;"
+                    href="/book-now.html">
+                    <p style="margin: 10px;">Plan Your Stay →</p>
+                </a>
 
                 <section class="space"></section>
                 <!-- triple column in a double column -->
                 <div class="infoRow">
                     <div class="infoColumn">
-                        <span id=" beforeyear">Year:</span>
+
                         <span id="year"></span>
                         <script>
                             document.getElementById("year").innerHTML = new Date().getFullYear() + 20;
                         </script>
                     </div>
                     <div class="infoColumn">
-                        <span id="top">Time:</span>
+
                         <div id="digital-clock"> </div>
                         <script src="script.js"> </script>
                     </div>
                     <div class="infoColumn">
-                        <span class="inline"> Temp:-</span>
+                        <span>-</span>
                         <span id="demo"></span>
                         <span class="inline">°C</span>
                         <script>
@@ -91,23 +90,29 @@ github.com/chostudio
             </div>
 
             <div class="column">
-                <img src="images/mainHotel.png" alt="Hotel Image" style="width: 100%;">
+                <img src="images/mainHotel.png" alt="Hotel Image" style="margin-left: auto;
+  margin-right: auto;
+  width: 100%;padding: 50px;">
             </div>
         </div>
 
 
     </section>
 
-    <h1><a href="activities.html">Activities</a></h1>
-    <p>See all the entertainment and attractions offered on the moon!</p>
-    <h1><a href="dining.html">Dining</a></h1>
-    <p>In the mood for some food? Check out our selection of various restaurants.</p>
-    <h1><a href="about.html">About</a></h1>
-    <p>Learn more about Crescent.</p>
+    <section style="background-color: aliceblue;">
+        <section style="height:20px;"></section>
+        <h1><a href="activities.html" style="color: black;">Activities</a></h1>
+        <p style="color: black;">See all the entertainment and attractions offered on the moon!</p>
+        <h1><a href="dining.html" style="color: black;">Dining</a></h1>
+        <p style="color: black;">In the mood for some food? Check out our selection of various restaurants.</p>
+        <h1><a href="about.html" style="color: black;">About</a></h1>
+        <p style="color: black;">Learn more about Crescent.</p>
 
-    <p style=>Copyleft All wrongs reserved Crescent Hotel</p>
+
+    </section>
 
     <footer style="font-family: 'Roboto'; font-size: 20px;">
+        <p style=>Copyleft All wrongs reserved Crescent Hotel</p>
         <li><a href="book-now.html">Book now</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="dining.html">Dining</a></li>
