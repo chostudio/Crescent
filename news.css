@@ -1,0 +1,122 @@
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.infoColumn {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+
+}
+
+/* Clear floats after the columns */
+.infoRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.space {
+    height: 150px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1400px) {
+    .space {
+        height: 75px;
+
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .column {
+        width: 100%;
+    }
+
+    .infoColumn {
+        width: 100%;
+    }
+
+    .space {
+        height: 40px;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #top {
+        font-size: 40px;
+
+    }
+}
+
+/* Create two unequal columns that floats next to each other */
+.secondcolumn {
+    float: left;
+    padding: 10px;
+    position: relative;
+}
+
+.left {
+    width: 75%;
+}
+
+.right {
+    width: 25%;
+    height: auto;
+}
+
+/* Clear floats after the columns */
+.secondrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}
+
+
+.image {
+    z-index: -1;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.newsTextTitle {
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    color: #f2f2f2;
+    font-size: 40px;
+}
+
+.newsTextInfo {
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    color: #f2f2f2;
+    margin: 0;
+}
