@@ -17,14 +17,17 @@
     font-size: 40px;
 }
 
+/*
 #book-now :hover {
-    /*background-color: aqua;*/
+    background-color: aqua;
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
-    /*background-color: aqua;*/
+    background-color: aqua;
 }
+
+*/
 
 /* Add an active class to highlight the current page
 .topnav a.active {
