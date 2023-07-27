@@ -20,6 +20,16 @@ p {
   color: #f2f2f2;
 }
 
+h2 {
+  font-size: 30px;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+hr {
+  width: 90%;
+}
+
 span {
   white-space: nowrap;
   font-size: 25px;

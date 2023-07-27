@@ -6,10 +6,24 @@
 
 .newsColumn {
     float: left;
-    width: 33.33%;
-    padding: 10px;
+    width: 30%;
+    padding: 1vw;
     height: 300px;
     box-sizing: border-box;
+
+    border: solid;
+    border-width: 5px;
+    border-color: #f2f2f2;
+
+    margin: 1vw;
+}
+
+.newsRow {
+    padding-top: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    align-items: center;
+
 }
 
 /* Clear floats after the columns */
@@ -21,8 +35,6 @@
 }
 
 
-
-
 .image {
     z-index: -1;
     object-fit: cover;
@@ -30,7 +42,7 @@
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
     .newsColumn {
         width: 100%;
     }
