@@ -6,22 +6,26 @@
 
 .newsColumn {
     float: left;
-    width: 30%;
+    width: 31%;
     padding: 1vw;
     height: 300px;
     box-sizing: border-box;
 
     border: solid;
-    border-width: 5px;
+    border-width: 2px;
     border-color: #f2f2f2;
 
-    margin: 1vw;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 20px;
+
 }
 
 .newsRow {
     padding-top: 20px;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 10px;
+    padding-right: 10px;
     align-items: center;
 
 }
@@ -32,6 +36,7 @@
     display: table;
     clear: both;
     box-sizing: border-box;
+
 }
 
 
@@ -44,6 +49,6 @@
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1200px) {
     .newsColumn {
-        width: 100%;
+        width: 97%;
     }
 }

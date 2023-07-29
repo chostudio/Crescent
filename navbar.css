@@ -1,71 +1,104 @@
-/* Add a black background color to the top navigation */
-.topnav {
-    overflow: hidden;
-    transition-duration: 0.4s;
+.nav {
+    height: 50px;
+    width: 100%;
+    position: relative;
 }
 
+.nav>.nav-header {
+    display: inline;
+}
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
     font-family: 'Bebas Neue';
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 20px;
     text-decoration: none;
-    font-size: 40px;
 }
 
-/*
-#book-now :hover {
-    background-color: aqua;
+.nav>.nav-header>.nav-title>a:hover {
+    text-decoration: none;
 }
 
 
-.topnav a:hover {
-    background-color: aqua;
-}
-
-*/
-
-/* Add an active class to highlight the current page
-.topnav a.active {
-    color: aqua;
-} */
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+.nav>.nav-btn {
     display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 850px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 30px;
+    font-family: 'Bebas Neue';
 
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 850px) {
-    .topnav.responsive {
-        position: relative;
-    }
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
 
-    .topnav.responsive a.icon {
+.nav>.nav-links>a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav>.nav-btn {
+        display: inline-block;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 0px;
+        top: 0px;
     }
 
-    .topnav.responsive a {
-        float: none;
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
         display: block;
-        text-align: left;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: rgb(25, 25, 25);
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
     }
 }

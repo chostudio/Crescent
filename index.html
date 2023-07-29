@@ -33,20 +33,31 @@ github.com/chostudio
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="news.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="index.html">Crescent</a>
-        <a href="book-now.html" style="float: right;">Book now</a>
-        <a href="dining.html" style="float: right;">Dining</a>
-        <a href="activities.html" style="float: right;">Activities</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="index.html">Crescent</a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="activities.html" target="_blank">Activities</a>
+            <a href="dining.html" target="_blank">Dining</a>
+            <a href="book-now.html" target="_blank">Book Now</a>
+        </div>
     </div>
+
     <script src="navbar.js"> </script>
 
     <!-- hero landing page-->
@@ -100,7 +111,7 @@ github.com/chostudio
     </section>
     <!-- news -->
     <hr>
-    <section style="background-color: #151515;">
+    <section>
 
         <section style="height:30px;"></section>
         <h1 style="margin: 10px;">Recent News</h1>
