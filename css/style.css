@@ -1,6 +1,10 @@
 /* CSS */
 
 /* The astrisk selects all CSS elements */
+.bebasNeue{
+  font-family: 'Bebas Neue';
+}
+
 
 #splashImage {
   margin-left: auto;
@@ -127,10 +131,6 @@ h2 {
   font-family: 'Bebas Neue';
 }
 
-a {
-  text-decoration: none;
-  color: #f2f2f2;
-}
 
 a:hover {
   text-decoration: none;
@@ -156,31 +156,9 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: rgb(25, 25, 25);
+  background-color: rgb(25, 25, 25) !important;
 }
 
-footer {
-  float: left;
-  font-size: 40px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-family: 'Bebas Neue';
-  font-weight: normal;
-  overflow: hidden;
-  background-color: #333;
-  top: 0;
-  width: 100%;
-}
-
-li a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
 
 /* Container for flexboxes */
 .row {
