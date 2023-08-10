@@ -29,22 +29,23 @@ github.com/chostudio
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
     <!-- stylesheets -->
     <link rel="stylesheet" href="/css/style.css">
     <!--<link rel="stylesheet" href="/css/navbar.css">-->
     <link rel="stylesheet" href="/css/news.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
         <div class="container-fluid">
-            <a class="navbar-brand bebasNeue" href="#">Crescent</a>
+            <a class="navbar-brand bebasNeue" href="#index.html">Crescent</a>
+
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
                 aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,7 +83,7 @@ github.com/chostudio
                 </h1>
                 <a style="box-sizing: border-box; display: block; border-width:2px; border-style:solid; border-color:#f2f2f2;width: 300px;margin:auto;"
                     href="/book-now.html">
-                    <p style="margin: 10px;">Plan Your Stay →</p>
+                    <p class="m-2">Plan Your Stay →</p>
                 </a>
 
                 <section class="space"></section>
@@ -110,61 +111,132 @@ github.com/chostudio
                         </script>
                     </div>
                 </div>
-
-
             </div>
 
             <div class="col">
-                <img id="splashImage" src="images/mainHotel.png" alt="Hotel Image">
+                <img class="p-4" id="splashImage" src="images/mainHotel.png" alt="Hotel Image">
             </div>
         </div>
 
-
     </section>
     <!-- news -->
-    <hr>
+    <div class="row d-flex justify-content-center">
+        <hr class="bg-white" style="width: 90%; height: 3px;">
+    </div>
     <section>
 
-        <section style="height:30px;"></section>
         <h1 class="m-5 text-white">Recent News</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xl-4 col-12">
+                    <div class="card originalBackgroundColor m-4">
+                        <img src="/images/apolloArcade.png" alt="" class="img-fluid card-img-top">
 
-        <section class="row">
-            <div class="col">
-                <h2 class="text-white">Lunar Laser Tag renovation! Brighter colors! More space!</h2>
+                        <div class="card-body text-white">
+                            <h2 class="card-title text-white">Lunar Laser Tag renovation! Brighter colors! More space!
+                            </h2>
+                        </div>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4">
+                    <div class="card originalBackgroundColor m-4">
+                        <img src="/images/discoveryDining.png" alt="" class="img-fluid card-img-top">
+
+                        <div class="card-body text-white">
+                            <h2 class="card-title text-white">The new seasonal menu at Discovery Dining is
+                                available!
+                            </h2>
+                        </div>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-12">
+                    <div class="card originalBackgroundColor m-4">
+                        <img src="/images/orionsOutpost.webp" alt="" class="img-fluid card-img-top">
+
+                        <div class="card-body text-white">
+                            <h2 class="card-title text-white">Watch the 21st annual Space Iditarod from Orion's Outpost!
+                            </h2>
+                        </div>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
 
             </div>
-            <div class="col">
-                <h2 class="text-white">Watch the 21st annual Space Iditarod from Orion's Outpost!</h2>
 
-            </div>
-            <div class="col">
-                <h2 class="text-white">The newest seasonal menu at Discovery Dining is available!</h2>
+        </div>
+    </section>
 
-            </div>
+    <div class="row p-5">
+        <div class="col">
+            <h1 class="p-2">Activities</h1>
+            <p>See all the entertainment and attractions offered on the moon!</p>
+            <a href="#" class="btn btn-primary">Activities</a>
+        </div>
+        <div class="col">
+            <figure class="figure p-4">
+                <img src="/images/roverRacing.png" alt="" class="figure-img card-img-top">
+                <figcaption class="figure-caption text-white">Rover Racing</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="row p-5">
+        <div class="col">
+            <figure class="figure p-4">
+                <img src="/images/eclipseEatery.png" alt="" class="figure-img card-img-top">
+                <figcaption class="figure-caption text-white">Eclipse Eatery</figcaption>
+            </figure>
+        </div>
+        <div class="col">
+            <h1 class="p-2">Dining</h1>
+            <p>In the mood for some food? Check out our selection of various restaurants.</p>
+            <a href="#" class="btn btn-primary">Dining</a>
+        </div>
+    </div>
+    <div class="row p-5">
+        <div class="col">
+            <h1 class="p-2">About</h1>
+            <p>Learn more about Crescent.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="col">
+            <figure class="figure p-4">
+                <img src="/images/shop2.png" alt="" class="figure-img card-img-top">
+                <figcaption class="figure-caption text-white">Moon Museum</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="row p-5">
+        <div class="col">
+            <figure class="figure m-4">
+                <img src="/images/market.png" alt="" class="figure-img card-img-top">
+                <figcaption class="figure-caption text-white">Grocery Store</figcaption>
+            </figure>
+        </div>
+        <div class="col">
+            <h1 class="text-white p-2">Luxury doesn't mean unaffordable.</h1>
+            <p>Find a price that works for you.</p>
+            <a href="#" class="btn btn-primary">Price Calculator</a>
+        </div>
+    </div>
+    <div class="row p-5 d-flex justify-content-center">
+       
+            <h1 class="text-white p-2">All it takes is one small step.</h1>
+            <a href="#" class="btn btn-primary">Book Now</a>
 
-        </section>
-        <h1 class="text-white">Luxury doesn't mean unaffordable.</h1>
-        <a href="" class="text-white">Calculate a price that works for you.</a>
+    </div>
 
-        <h1><a href="activities.html" class="text-white">Activities</a></h1>
-        <p>See all the entertainment and attractions offered on the moon!</p>
-        <h1><a href="dining.html" class="text-white">Dining</a></h1>
-        <p>In the mood for some food? Check out our selection of various restaurants.</p>
-        <h1><a href="about.html" class="text-white">About</a></h1>
-        <p>Learn more about Crescent.</p>
-        <h1 class="text-white">All it takes is one small step.</h1>
-        <a href="" class="text-white">Book Now</a>
-        <section style="height:30px;"></section>
+    <!-- infinite horizonal scrolling of pictures -->
+    <section style="height:30px;"></section>
 
     </section>
 
     <footer class="text-white py-5">
         <div class="row text-white">
-
-            <div class="col-md-5 offset-md-1 mb-3">
+            <div class="col-md-6 m-3">
                 <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <h5>Subscribe to our newsletter.</h5>
                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                         <label for="newsletter1" class="visually-hidden">Email address</label>
                         <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
@@ -172,9 +244,8 @@ github.com/chostudio
                     </div>
                 </form>
             </div>
-            <div class="col-6 col-md-2 mb-3 text-white">
-                <h5 class="">Section</h5>
-                <ul class="nav flex-column text-white">
+            <div class="col-5 m-3 text-white">
+                <ul class="d-flex align-items-center justify-content-center nav flex-column text-white p-2">
                     <li class="nav-item mb-2"><a href="#" class=" nav-link p-0 text-white">Activities</a></li>
                     <li class="nav-item mb-2 text-white"><a href="#" class="nav-link p-0 text-white">Dining</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
@@ -182,21 +253,12 @@ github.com/chostudio
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Book Now</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-2 mb-3 text-white">
-                <h5 class="">Section</h5>
-                <ul class="nav flex-column text-white">
-                    <li class="nav-item mb-2"><a href="#" class=" nav-link p-0 text-white">Home</a></li>
-                    <li class="nav-item mb-2 text-white"><a href="#" class="nav-link p-0 text-white">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
-                </ul>
-            </div>
+
         </div>
 
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>Copyright © 2023. Created by Chris Ho</p>
-            
+
         </div>
     </footer>
     <noscript>To use this site, please enable JavaScript.</noscript>
@@ -205,6 +267,6 @@ github.com/chostudio
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    </body>
+</body>
 
 </html>

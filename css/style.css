@@ -5,6 +5,13 @@
   font-family: 'Bebas Neue';
 }
 
+.originalBackgroundColor{
+  background-color: rgb(25, 25, 25);
+}
+
+.navbar-brand{
+  font-size: var(--bs-nav-link-font-size) !important;
+}
 
 #splashImage {
   margin-left: auto;
@@ -28,11 +35,6 @@ h2 {
   font-size: 30px;
   color: #f2f2f2;
   text-align: center;
-}
-
-hr {
-  width: 90%;
-  height: 2px;
 }
 
 span {
@@ -72,7 +74,6 @@ span {
 .infoColumn {
   float: left;
   width: 33.33%;
-  padding: 10px;
   text-align: center;
 
 }
@@ -124,7 +125,6 @@ h1 {
   font-weight: normal;
   text-align: center;
   color: #f2f2f2;
-  margin-bottom: -10px;
 }
 
 h2 {
@@ -158,6 +158,7 @@ body {
   overflow-x: hidden;
   background-color: rgb(25, 25, 25) !important;
 }
+
 
 
 /* Container for flexboxes */
