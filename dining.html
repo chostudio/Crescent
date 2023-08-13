@@ -5,36 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crescent - Dining</title>
+    <title>Crescent</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#202525">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#202525">
+
+    <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--<link rel="stylesheet" href="/css/navbar.css">-->
+    <link rel="stylesheet" href="/css/news.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Crescent</a>
-        <a href="book-now.html">Book now</a>
-        <a href="about.html">About</a>
-        <a href="dining.html">Dining</a>
-        <a href="activities.html">Activities</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand bebasNeue pt-0 mt-0 px-2" href="index.html"><img src="images/crescentLogo.png"
+                    style="width: 100px;" alt="Crescent Logo"></a>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <script src="navbar.js"> </script>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <h1>Dining</h1>
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item h2">
+                        <a class="nav-link bebasNeue pb-0" target="_blank" aria-current="page"
+                            href="activities.html">Activities</a>
+                    </li>
+                    <li class="nav-item h2">
+                        <a target="_blank" class="nav-link bebasNeue pb-0" href="dining.html">Dining</a>
+                    </li>
+                    <li class="nav-item h2">
+                        <a target="_blank" class="nav-link bebasNeue pb-0" href="about.html">About</a>
+                    </li>
+                </ul>
+                <form role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <h1 class="mt-5 pt-5">Dining</h1>
 
-    <p style="font-style: italic;">"The food here is out of this world."</p>
+    <p  class="mb-5" style="font-style: italic;">"The food here is out of this world."</p>
 
 
-    <h1>Discovery Dining</h1>
+    <h1 class="mt-5 pt-5">Discovery Dining</h1>
     <p>Embark on a culinary odyssey of flavors and innovation at Discovery Dining.</p>
 
     <div class="row">
@@ -43,7 +79,7 @@
             <img src="images/discoveryDining.png" alt="">
         </div>
         <div class="column">
-            <p>Menu</p>
+            <p class="display-6">Menu</p>
             <p>Galactic Gourmet Platter - An assortment of celestial delicacies from various corners of the universe.
             </p>
             <p>
@@ -77,14 +113,14 @@
     </div>
 
 
-    <h1>Eclipse Eatery</h1>
+    <h1 class="pt-5">Eclipse Eatery</h1>
     <p>Experience a fusion like no other at Eclipse Eatery, where flavors align in perfect harmony.</p>
     <div class="row">
         <div class="column">
             <img src="images/eclipseEatery.png" alt="">
         </div>
         <div class="column">
-            <p>Menu</p>
+            <p class="display-6">Menu</p>
             <p>Lunar Lava Dip - Creamy queso dip infused with smoky chipotle, served with moon-shaped tortilla chips.
             </p>
             <p>
@@ -125,7 +161,7 @@
     </div>
 
 
-    <h1>Mars Bar</h1>
+    <h1 class="pt-5">Mars Bar</h1>
     <p>Sip on stellar concoctions and raise your spirits at this space oasis.</p>
 
     <div class="row">
@@ -133,7 +169,7 @@
             <img src="images/bar2.png" alt="">
         </div>
         <div class="column">
-            <p>Menu</p>
+            <p class="display-6">Menu</p>
             <p>Solar Flare Martini - A fiery concoction blending premium spirits with a hint of tropical starfruit.</p>
             <p>Cosmic Cosmopolitan: A Martian take on the classic Cosmopolitan, featuring Martian vodka, cosmic
                 cranberry juice, triple
@@ -158,7 +194,7 @@
         </div>
     </div>
 
-    <h1>Neptunes' Noodles</h1>
+    <h1 class="pt-5">Neptunes' Noodles</h1>
     <p>Dive into a sea of Asian flavors.</p>
 
 
@@ -167,7 +203,7 @@
             <img src="images/discoveryDining2.png" alt="">
         </div>
         <div class="column">
-
+            <p class="display-6">Menu</p>
             <p>Celestial Dumplings - Steamed dumplings filled with a fusion of flavors from distant galaxies, served
                 with a
                 cosmic
@@ -191,7 +227,7 @@
 
         </div>
     </div>
-    <h1>Saturn's Sweets</h1>
+    <h1 class="pt-5">Saturn's Sweets</h1>
     <p>Where sugary dreams come true.</p>
 
 
@@ -200,7 +236,7 @@
             <img style="width:100rem;" src="images/saturnsSweets.png" alt="">
         </div>
         <div class="column">
-            <p>Menu</p>
+            <p class="display-6">Menu</p>
             <p>Milky Way Cheesecake - A velvety cheesecake infused with the essence of the Milky Way galaxy and
                 topped
                 with
@@ -227,24 +263,17 @@
                 maraschino
                 cherry.</p>
             <p>
-                Comet Float - A scoop of vanilla ice cream floating in a sea of root beer or cosmic cola.</p>
-            <p>
-                Cosmic Coconut Pudding - A creamy coconut pudding topped with tropical fruit and cosmic sprinkles.
-            </p>
-            <p>
-                Galactic Donuts - A selection of cosmic-themed donuts with assorted fillings and glazes.</p>
-            <p>
-                Stardust Cupcakes - Moist cupcakes adorned with celestial frosting and a sprinkle
-                of
-                stardust.
-            </p>
-            <p>
                 Halley's Hot Chocolate - A rich and velvety hot chocolate with a touch of cosmic cinnamon and
                 whipped
                 cream.
             </p>
         </div>
     </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

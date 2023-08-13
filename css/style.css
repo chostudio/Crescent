@@ -5,8 +5,16 @@
   font-family: 'Bebas Neue';
 }
 
+.roboto {
+  font-family: 'Roboto';
+}
+
 .originalBackgroundColor{
   background-color: rgb(25, 25, 25);
+}
+
+.originalColor {
+  color: rgb(25, 25, 25);
 }
 
 .navbar-brand{

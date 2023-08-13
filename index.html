@@ -43,8 +43,8 @@ github.com/chostudio
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
         <div class="container-fluid">
-            <a class="navbar-brand bebasNeue" href="#index.html">Crescent</a>
-
+            <a class="navbar-brand bebasNeue pt-0 mt-0 px-2" href="index.html"><img src="images/crescentLogo.png" style="width: 100px;"
+                    alt="Crescent Logo"></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
                 aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,13 +54,14 @@ github.com/chostudio
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item h2">
-                        <a class="nav-link bebasNeue" aria-current="page" href="#">Activities</a>
+                        <a class="nav-link bebasNeue pb-0" target="_blank" aria-current="page"
+                            href="activities.html">Activities</a>
                     </li>
                     <li class="nav-item h2">
-                        <a class="nav-link bebasNeue" href="#">Dining</a>
+                        <a target="_blank" class="nav-link bebasNeue pb-0" href="dining.html">Dining</a>
                     </li>
                     <li class="nav-item h2">
-                        <a class="nav-link bebasNeue" href="#">About</a>
+                        <a target="_blank" class="nav-link bebasNeue pb-0" href="about.html">About</a>
                     </li>
                 </ul>
                 <form role="search">
@@ -70,7 +71,6 @@ github.com/chostudio
         </div>
     </nav>
 
-    <script src="navbar.js"> </script>
 
     <!-- hero landing page-->
     <section>
@@ -80,7 +80,7 @@ github.com/chostudio
 
                 <h1 class="mb-5 text-white" id="top" style="text-align: center;">An experience out of this world.
                 </h1>
-                <a style="box-sizing: border-box; display: block; border-width:2px; border-style:solid; border-color:#f2f2f2;width: 300px;margin:auto;"
+                <a style="box-sizing: border-box; display: block; border-width:2px; border-style:solid; border-color:#f2f2f2;width: 300px;margin:auto;text-decoration: none;"
                     href="/book-now.html">
                     <p class="m-2">Plan Your Stay →</p>
                 </a>
@@ -135,7 +135,7 @@ github.com/chostudio
                             <h2 class="card-title text-white">Lunar Laser Tag renovation! Brighter colors! More space!
                             </h2>
                         </div>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a target="_blank" href="activities.html" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 col-xl-4">
@@ -147,7 +147,7 @@ github.com/chostudio
                                 available!
                             </h2>
                         </div>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a target="_blank" href="dining.html" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-4 col-12">
@@ -158,7 +158,7 @@ github.com/chostudio
                             <h2 class="card-title text-white">Watch the 21st annual Space Iditarod from Orion's Outpost!
                             </h2>
                         </div>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a target="_blank" href="activities.html" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
 
@@ -171,7 +171,7 @@ github.com/chostudio
         <div class="col">
             <h1 class="p-2 pt-5 mt-5">Activities</h1>
             <p>See all the entertainment and attractions offered on the moon!</p>
-            <a href="#" class="btn btn-primary">Activities</a>
+            <a target="_blank" href="activities.html" class="btn btn-primary">Activities</a>
         </div>
         <div class="col">
             <figure class="figure m-4 px-0 px-md-5">
@@ -190,14 +190,14 @@ github.com/chostudio
         <div class="col">
             <h1 class="p-2 pt-5 mt-5">Dining</h1>
             <p>In the mood for some food? Check out our selection of various restaurants.</p>
-            <a href="#" class="btn btn-primary">Dining</a>
+            <a target="_blank" href="dining.html" class="btn btn-primary">Dining</a>
         </div>
     </div>
     <div class="row p-5 py-0">
         <div class="col">
             <h1 class="p-2 pt-5 mt-5">About</h1>
             <p>Learn more about Crescent.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a target="_blank" href="about.html" class="btn btn-primary">Go somewhere</a>
         </div>
         <div class="col">
             <figure class="figure m-4 px-0 px-md-5">
@@ -216,13 +216,13 @@ github.com/chostudio
         <div class="col">
             <h1 class="text-white p-2 pt-5 mt-5">Luxury doesn't mean unaffordable.</h1>
             <p>Find a price that works for you.</p>
-            <a href="#" class="btn btn-primary">Price Calculator</a>
+            <a target="_blank" href="calculator.html" class="btn btn-primary">Price Calculator</a>
         </div>
     </div>
     <div class="row p-5 d-flex justify-content-center">
-       
-            <h1 class="text-white p-2">All it takes is one small step.</h1>
-            <a href="#" class="btn btn-primary">Book Now</a>
+
+        <h1 class="text-white p-2">All it takes is one small step.</h1>
+        <a target="_blank" href="book-now.html" class="btn btn-primary">Book Now</a>
 
     </div>
 
@@ -247,17 +247,15 @@ github.com/chostudio
                 <ul class="d-flex align-items-center justify-content-center nav flex-column text-white p-2">
                     <li class="nav-item mb-2"><a href="#" class=" nav-link p-0 text-white">Activities</a></li>
                     <li class="nav-item mb-2 text-white"><a href="#" class="nav-link p-0 text-white">Dining</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Price Calculator</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Book Now</a></li>
                 </ul>
             </div>
-
         </div>
 
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>Copyright © 2023. Created by Chris Ho</p>
-
         </div>
     </footer>
     <noscript>To use this site, please enable JavaScript.</noscript>

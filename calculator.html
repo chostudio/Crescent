@@ -36,8 +36,40 @@
 </head>
 
 <body>
-    <div class="container">
-        <table class="table table-dark mt-5">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+        <a class="navbar-brand bebasNeue pt-0 mt-0 px-2" href="index.html"><img src="images/crescentLogo.png"
+                style="width: 100px;" alt="Crescent Logo"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item h2">
+                    <a class="nav-link bebasNeue pb-0" target="_blank" aria-current="page"
+                        href="activities.html">Activities</a>
+                </li>
+                <li class="nav-item h2">
+                    <a target="_blank" class="nav-link bebasNeue pb-0" href="dining.html">Dining</a>
+                </li>
+                <li class="nav-item h2">
+                    <a target="_blank" class="nav-link bebasNeue pb-0" href="about.html">About</a>
+                </li>
+            </ul>
+            <form role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<script src="navbar.js"> </script>
+    <div class="container mt-5">
+        <h1 class="h1 text-white">Room Price Calculator</h1>
+        <table class="table table-dark mt-3 border-2 border-white">
             <tr>
                 <td>
                     <p>Room type:</p>
@@ -45,15 +77,14 @@
                 <td>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01">Select room type</label>
+                            <label class="input-group-text"  for="inputGroupSelect01">Select:</label>
                         </div>
                         <select class="custom-select" id="inputGroupSelect01">
-                            <option selected></option>
-                            <option value="1">Single</option>
-                            <option value="2">Double</option>
-                            <option value="3">Triple</option>
-                            <option value="4">Deluxe</option>
-                            <option value="5">Executive</option>
+                            <option selected value="single">Single</option>
+                            <option value="double">Double</option>
+                            <option value="triple">Triple</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="executive">Executive</option>
                         </select>
                     </div>
                 </td>
@@ -65,40 +96,39 @@
                 <td>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01"># of Nights</label>
+                            <label class="input-group-text" for="inputGroupSelect01"># of Nights:</label>
                         </div>
-                        <select class="custom-select" id="inputGroupSelect01">
-                            <option selected></option>
-                            <option value="1">1</option>
+                        <select class="custom-select" id="inputGroupSelect02">
+                            <option selected value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
-                            <option value="1">6</option>
-                            <option value="2">7</option>
-                            <option value="3">8</option>
-                            <option value="4">9</option>
-                            <option value="5">10</option>
-                            <option value="1">11</option>
-                            <option value="2">12</option>
-                            <option value="3">13</option>
-                            <option value="4">14</option>
-                            <option value="5">15</option>
-                            <option value="1">16</option>
-                            <option value="2">17</option>
-                            <option value="3">18</option>
-                            <option value="4">19</option>
-                            <option value="5">20</option>
-                            <option value="1">21</option>
-                            <option value="2">22</option>
-                            <option value="3">23</option>
-                            <option value="4">24</option>
-                            <option value="5">25</option>
-                            <option value="1">26</option>
-                            <option value="2">27</option>
-                            <option value="3">28</option>
-                            <option value="4">29</option>
-                            <option value="4">30</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
                         </select>
                     </div>
                 </td>
@@ -107,13 +137,18 @@
                 <td>
                     <p>Estimated Cost:</p>
                 </td>
-                <td></td>
+                <td>
+                    <button class="btn btn-primary" onclick="calculate()">Calculate</button>
+                    <span class="roboto" id="result"></span>
+                </td>
             </tr>
         </table>
 
     </div>
+
     <noscript>To use this site, please enable JavaScript.</noscript>
 
+    <script src="/javascript/calculator.js"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
