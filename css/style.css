@@ -21,6 +21,23 @@
   font-size: var(--bs-nav-link-font-size) !important;
 }
 
+.splashBox{
+  animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
 #splashImage {
   margin-left: auto;
   margin-right: auto;

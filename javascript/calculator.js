@@ -6,19 +6,19 @@ function calculate() {
 
     switch (operation) {
         case "single":
-            result = num1 * 10;
+            result = num1 * 7;
             break;
         case "double":
-            result = num1 - 20;
+            result = num1 * 14;
             break;
         case "triple":
-            result = num1 * 30;
+            result = num1 * 21;
             break;
         case "deluxe":
-            result = num1 * 40;
+            result = num1 * 28;
             break;
         case "executive":
-            result = num1 * 50;
+            result = num1 * 35;
             break;
         default:
             result = "Invalid operation";
